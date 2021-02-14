@@ -1,5 +1,7 @@
 # acresnfsi
-Real estate agent website
+Real estate agent website using CSS framework Bulma.
+
+# Features
 Real time whats app chat
 submission to designated email
 office location
