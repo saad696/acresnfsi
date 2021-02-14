@@ -1,12 +1,12 @@
 const path = require("path");
 const CleanPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+// const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   mode: "development",
   devtool: "eval-cheap-source-map",
-  entry:["./src/index.js","./src/images.js"],
+  entry:["./src/index.js","./src/images.js","./src/formSpree.js"],
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")

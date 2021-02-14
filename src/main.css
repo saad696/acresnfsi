@@ -5,8 +5,13 @@ body {
 }
 
 .navbar {
-  box-shadow: 0 5px 3px #979696;
   background-color: #f2c57c;
+  box-shadow: 0 8px 13px #979696;
+}
+
+.navbar-menu{
+  background-color: #f2c57c;
+  box-shadow: none;
 }
 
 .nav-item {
@@ -34,20 +39,48 @@ body {
   animation-duration: 5s;
 }
 
-.message-header{
-    background-color: #f2c57c;
+.message-header {
+  background-color: #f2c57c;
 }
 
 .about {
   box-shadow: 0 8px 13px #979696;
 }
 
+.consult-btn{
+  text-decoration: none;
+}
+
+.notification{
+  display: none;
+  padding: 0;
+}
+
 .bg-color {
   background-color: #d2fdff;
 }
 
-#card-svg1{
+.card1,
+.card2,
+.card3{
+  transition: all .8s ease;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover{
+  transform: translateY(-30px);
+}
+
+#card-svg1,
+#form-svg {
   position: absolute;
+  width: 100%; 
+  height: auto;
+}
+
+#carousel{
+  box-shadow: 0 8px 13px #979696;
 }
 
 .vid-overlay video {
@@ -71,13 +104,47 @@ body {
   height: 200px;
 }
 
+#check-btn{
+  text-decoration: none;
+}
+
+.socials{
+  background-color: #d2fdff;
+}
+
+.social-icon{
+font-size: 3rem;
+text-decoration: none;
+}
+
+.instagram{
+  margin-left: 90%;
+}
+
+.copyright{
+  margin: 0;
+  padding: 3%;
+  background-color: #27c4c4;
+}
+
+.my-name{
+  text-decoration: none;
+  color: #000;
+}
+
 @media (max-width: 1024px) {
-    #service1,
-    #service2,
-    #service3 {
-      height: 150px;
-    } 
-} 
+  #service1,
+  #service2,
+  #service3 {
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .instagram{
+    margin-left: 80%;
+  }
+}
 
 @media (max-width: 700px) {
   .avatar {
